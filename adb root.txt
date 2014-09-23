@@ -1,0 +1,39 @@
+webcloud@ubuntu:~$ adb shell
+uid=0 gid=0@nutshell:/ # cd etc/                                               
+uid=0 gid=0@nutshell:/etc # emmcwp -t 0                                        
+uid=0 gid=0@nutshell:/etc # mkdir navi
+mkdir: can't create directory 'navi': Read-only file system
+1|uid=0 gid=0@nutshell:/etc # mount -o remount /dev/block/mmcblk0p1 /system
+uid=0 gid=0@nutshell:/etc # mkdir navi
+uid=0 gid=0@nutshell:/etc # cd navi
+uid=0 gid=0@nutshell:/etc/navi # touch AutoNaviDataRoot.flg
+uid=0 gid=0@nutshell:/etc/navi # ls
+AutoNaviDataRoot.flg
+uid=0 gid=0@nutshell:/etc/navi # cd ../..
+uid=0 gid=0@nutshell:/ # ps |grep navi
+ 2565 0         179m S <  /usr/bin/navimain-navi
+ 2566 0         198m S <  /usr/bin/voicerecogmain-navi
+ 2567 0         230m S <  /usr/bin/ttsmain-navi
+ 3406 0         460m S    AppLaunch Navi /data/apps/net.suntec.app.navi/app/ap
+ 3550 0         3472 S    grep navi
+uid=0 gid=0@nutshell:/ # kill -9 2565
+uid=0 gid=0@nutshell:/ # 
+
+
+MAP
+MAPP
+MAPD
+
+
+git push igerrit master:refs/for/nutshell/develop 
+
+
+sudo ln -s /home/webcloud/Desktop/Sublime\ Text\ 2/sublime_text /usr/bin/sublime
+
+
+
+ ./framework/service/navi/src/map/test/map_gcovrtool.sh
+
+sudo cp /usr/bin/adb  out/host/linux-x86/bin/adb
+which adb
+./framework/service/navi/src/map/test/map_run_test.sh 
