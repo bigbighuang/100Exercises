@@ -1,0 +1,5 @@
+\\mapsrv1\Softz\SVN
+
+http://172.26.10.31/WebCloudApl/branches/DDNI_PEC
+
+repo init -u ssh://git@nutshell.suntec.net/navi/develop/manifest.git -m naviddn_ios.xml -b master

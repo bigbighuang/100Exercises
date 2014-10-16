@@ -1,0 +1,17 @@
+ 
+
+
+2092  git log
+ 2093  gitk
+ 2094  git branch
+ 2095  git pull --rebase
+ 2096  git log
+ 2097  git push igerrit master:refs/for/nutshell/develop
+ 2098  gitk
+ 2099  git checkout -b temp igerrit/nutshell/develop
+ 2100  git log
+ 2101  icherry-pick dfcdcb188564b0723ab50cbf2bccda45890eaf8d
+ 2102  git log
+ 2103  gitk
+ 2104  git push igerrit temp:refs/for/nutshell/develop
+ 2105  gitk

@@ -1,0 +1,54 @@
+改串口
+
+升级模式：ChangeUSBOTGSwitch 0
+
+USB模式：ChangeUSBOTGSwitch 1
+
+1. emmcwp -t 0
+2. mount -o remount /dev/block/mmcblk0p1 /system
+
+
+编译：
+1. lb
+2. lunch
+3. 选择7
+4. blog
+5. adb push out/target/product/14cyavn/obj/cmake/shared/libmapengine-navi.so system/usr/lib
+
+ adb push out/target/product/14cyavn/obj/cmake/sharedstriped/libmapengine-navi.so system/usr/lib
+
+new window:
+adb shell
+
+打nv
+
+
+重命名navimain-navi
+ mv /usr/bin/navimain-navi /usr/bin/nv
+
+/bin/top -m 10 -t | grep nv  
+
+\\solar\pset\group\NaviDevelop\Group\iAutoUI\14Model\JA158\Temp\XIANG\Common
+
+
+adb push Navi.cpk /tmp
+adb shell
+cpki -fi /tmp/Navi.cpk
+
+
+编译make navimain-navi
+
+新的push navi代码
+ adb push out/target/product/14cyavn/obj/cmake/binstriped/navimain-navi system/usr/bin
+
+error unable read sd data解决办法
+System
+------>>>Device Name
+-------------------->>>DEVELOPDBG ON
+------------------------------------>>Debug
+------------------------------------------->>40 auto navi data
+
+
+
+
+mount -o remount /dev/block/mmcblk0p1 /system
